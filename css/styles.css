@@ -1,0 +1,317 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: url('https://picsum.photos/1000');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+hr {
+    border: 1px dotted #1a0000;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #1a0000;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    max-width: 20%;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 70%;
+    background-color: #1a0000;
+}
+
+.header a:link {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+a:link {
+    float: left;
+    display: block;
+    color: #F5DEB3;
+    padding: 24px;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+a:visited {
+    color: #DEB887;
+}
+
+a:hover {
+    color: #BC8F8F;
+    text-shadow: 1px 1px #DEB887;
+    -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.nav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 678px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .nav.responsive {
+        position: relative;
+    }
+
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .logo img {
+        max-width: 50%;
+    }
+}
+
+/*despre produse*/
+.about {
+    width: 95%;
+    height: auto;
+    background: #FFF8DC;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    margin: 0 auto;
+    color: #1a0000;
+    border: 3px dashed #DEB887;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.products {
+    width: 90%;
+    background: #1a0000;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    margin: 10px auto;
+    color: #FFF8DC;
+    border: 3px dashed #DEB887;
+    border-radius: 10px;
+}
+
+.description_prod {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards_prod {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 0;
+}
+
+.card {
+    width: 25%;
+    margin: 0;
+}
+
+.cards_prod .photo_prod {
+    max-width: 80%;
+    height: auto;
+    border: 2px dotted #A0522D;
+    box-shadow: 2px 3px 5px #D2B48C;
+    border-radius: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 10px 15px 0 rgba(200, 0, 0, 0.2), 0 12px 20px 5px rgba(100, 0, 0, 0.22);
+    -webkit-filter: inherit;
+    filter: inherit;
+    transition: all 1s;
+}
+
+.cards_prod .photo_prod:hover {
+    -webkit-transition: filter 1s;
+    transition: filter 1s;
+    box-shadow: 5px 15px 25px 0 rgba(0, 0, 0, 0.2), 0 15px 25px 5px rgba(0, 0, 0, 0.22);
+    -webkit-filter: contrast(200%);
+    filter: contrast(200%);;
+}
+
+.description_prod h1, .cards_prod h3, .cards_prod p {
+    text-align: center;
+    margin-left: 1%;
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 678px) {
+    .cards_prod {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-left: 7%;
+        margin-right: 5%;
+    }
+
+    .cards_prod .card {
+        width: 85%;
+    }
+}
+
+/*modulul Contacte*/
+.contacts {
+    width: 95%;
+    margin: 10px auto;
+    height: 380px;
+    background: #FFF8DC;
+    color: #1a0000;
+    border: 3px dashed #DEB887;
+    opacity: 0.97;
+    filter: alpha(opacity=97);
+    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.contacts .coord {
+    float: left;
+    max-width: 40%;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.contacts .map {
+    width: 60%;
+    float: right;
+    padding: 0;
+}
+
+.contacts h2 {
+    text-align: center;
+}
+
+.blok_coord {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.blok_coord span {
+    font-size: 2rem;
+    color: #1a0000;
+    padding-right: 30px;
+}
+
+.coord .ico {
+    background-color: #DEB887;
+    padding: 10px 20px;
+    box-shadow: 5px 15px 25px 0 #DEB88a, 10px 15px 25px 5px #DEB8fa;
+    border-radius: 50%;
+    opacity: 0.35;
+    filter: alpha(opacity=35);
+}
+
+.coord .ico1 {
+    background-color: #DEB887;
+    padding: 10px 25px;
+    box-shadow: 5px 15px 25px 0 #DEB88a, 10px 15px 25px 5px #DEB8fa;
+    border-radius: 50%;
+    opacity: 0.35;
+    filter: alpha(opacity=35);
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    background-color: #1a0000;
+    margin: 0;
+    padding: 5px 0;
+    background-color: #1a0000;
+    color: #F5DEB3;
+    height: auto;
+}
+
+/* stilurile pentru paginile aditionale*/
+.copy {
+    font-size: 3rem;
+}
+
+.about_capp {
+    width: 95%;
+    height: auto;
+    background: #FFF8DC;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    margin: 75px auto;
+    margin-bottom: 10px;
+    color: #1a0000;
+    border: 3px dashed #DEB887;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.about_capp .img1 {
+    float: right;
+    border: 3px dashed #DEB887;
+    width: 20%;
+    height: auto;
+}
+
+.about_capp .img2 {
+    float: left;
+    border: 3px dashed #DEB887;
+    width: 20%;
+    height: auto;
+}
