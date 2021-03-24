@@ -1,3 +1,5 @@
+/*css reset start*/
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -22,11 +24,14 @@ img {
     height: auto;
 }
 
+/*css reset end*/
+
+
 body {
-    background-color: brown;
+    background-color: rgb(191, 191, 189);
 }
 
-.cards_prod {
+.cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -41,20 +46,15 @@ body {
     margin: 3%;
     padding: 5px;
     text-align: center;
-
 }
 
 .card h3 {
-
     color: #fff;
     font-weight: bold;
 }
 
-.photo_prod {
-}
-
 .photo_oval {
-    height: 130px;
+    height: 180px;
     border-radius: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,20 +66,8 @@ body {
 }
 
 .photo_oval_vertical {
-    width: 130px;
+    width: 180px;
     height: 300px;
-}
-
-.order1 {
-    order: 1;
-}
-
-.order2 {
-    order: 2;
-}
-
-.order3 {
-    order: 3;
 }
 
 @media screen and (max-width: 700px) {
