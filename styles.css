@@ -32,10 +32,6 @@ body {
 }
 
 .cards {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
     max-width: 100%;
     padding: 0;
     margin-top: 85px;
@@ -68,20 +64,4 @@ body {
 .photo_oval_vertical {
     width: 180px;
     height: 300px;
-}
-
-@media screen and (max-width: 700px) {
-    .cards_prod {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin-left: 7%;
-        margin-right: 5%;
-    }
-
-    .cards_prod .card {
-        width: 80%;
-    }
 }
