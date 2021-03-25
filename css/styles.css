@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    background-image: url('https://picsum.photos/1000');
+    background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -211,7 +211,6 @@ a:hover {
 .contacts {
     width: 95%;
     margin: 10px auto;
-    height: 380px;
     background: #FFF8DC;
     color: #1a0000;
     border: 3px dashed #DEB887;
@@ -242,6 +241,7 @@ a:hover {
 .blok_coord {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
     justify-content: flex-start;
     padding-left: 30px;
 }
@@ -314,4 +314,11 @@ a:hover {
     border: 3px dashed #DEB887;
     width: 20%;
     height: auto;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
 }
