@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Пример</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Моя первая веб-страница" />
+    <meta name="keywords" content="Цветы, уход" />
+    <meta name="author" content="Леся" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body{
+            font-size: 1.3em;
+            padding: 15px 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <form>
+        <h3>Форма регистрации</h3>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label for="nаme">Фамилия:</label><input type="text" size="15" id="name" name="name" /><br />
+            <label>Имя:<input type="text" size="12" name="surname" /></label><br />
+            <label>Возраст:<input type="number" min="10" max="110" value="18" name="age" /></label><br />
+            <label>Адрес электронной почты: <input type="email" name="email_user" /></label><br /><br />
+        </fieldset>
+        <fieldset>
+            <legend>Данные для аккаунта</legend>
+            <label>Логин:<input type="text" size="15" name="login" /> </label><br />
+            <label>Пароль:<input type="password" size="9" name="password" /></label> <br />
+        </fieldset><br />
+        <input type="reset" value="Удалить" />
+        <input type="submit" value="Сохранить" />
+    </form>
+  </body>
+</html>
