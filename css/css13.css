@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html, body {
+    margin:0;
+    padding:0;
+}
+body{
+    font: 1.3em/2em 'Montserrat', sans-serif;
+    /*
+    background-color:  rgb(240,248,255);
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: 50% 50%; 
+    */
+    background: rgb(240,248,255) url("../images/flowers2.jpg") no-repeat fixed 50% 50%;
+    background-size: cover;
+}
+h1, h2 {
+    color: rgb(235, 180, 5);
+    /*background-color:  rgb(240,248,255);*/
+    padding: 7px;
+
+}
+
+p{
+    padding: 10px;
+    color:  white;
+    font-size: 1.2em;
+    background-color: rgba(20, 105, 185, 0.8);
+}
+
+ul {
+    list-style-type:none;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+/*
+
+font-size: 1.4em; 
+rgb(80, 140, 210); - albastru deschis
+background-color: rgb(20, 105, 185); - albastru inchis
+ color: rgb(235, 180, 5); -galben
+*/
