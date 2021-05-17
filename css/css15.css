@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html, body {
+    margin:0;
+    padding:0;
+}
+body{
+    font: 1.3em/2em 'Montserrat', sans-serif;
+    background-color:  rgb(240,248,255);
+}
+h1 {
+    color: rgb(80, 140, 210);
+    text-align: center;
+}
+h2 {
+    color: rgb(80, 140, 210);
+    padding: 7px;
+}
+
+p{
+    padding: 10px;
+    color:  white;
+    font-size: 1.2em;
+    background-color: rgb(20, 105, 185);
+}
+/* стиль ссылок */
+a:link { 
+    color: rgb(20, 105, 185);
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* посещённая ссылка */
+a:visited { 
+    color: rgb(235, 180, 5);
+}
+/* курсор поверх ссылки */
+a:hover { 
+    background-color: rgb(235, 180, 5);
+    color: white;
+}
+/* активная ссылка */
+a:active { 
+    color: rgb(80, 140, 210);;
+}
+
+/* table */
+table {
+    font-size: 1.2em;
+    border:3px solid rgb(80, 140, 210);
+    border-collapse:collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+th, td {
+    border:3px solid rgb(80, 140, 210);
+    border-collapse:collapse;
+    height: 50px;
+    padding: 5px 10px;
+}
+tr:nth-child(2n-1) {
+    background-color: rgb(20, 105, 185);;
+    color: #e6f9ff; 
+} 
+tr:nth-child(2n) {
+    background-color: #e6f9ff;
+    color: rgb(20, 105, 185);
+}
+table caption {
+    color: rgb(20, 105, 185);
+    font-size: 1.3em;
+}
+
+form{
+    padding: 3%;
+}
+input {
+    padding: 10px;
+    margin: 10px;
+    background-color:rgb(20, 105, 185);
+    color: white;
+    width: 25%;
+}
+input::placeholder{
+    color: white;
+    font-size: 1.1em;
+}
+input[type="submit"]{
+    background-color:rgb(235, 180, 5);
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 15%;
+    border: 2px solid rgb(235, 180, 5);
+    outline: none;
+ }
+input:focus {
+    background-color: rgb(80, 140, 210);
+    border: 2px solid rgb(80, 140, 210);
+    outline: none;
+}
+/*
+p::first-letter{
+    font-size: 2em;
+}
+p::first-line{
+    color: #FFFF00;
+}
+*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li { 
+    padding-left: 16px; 
+}
+li::before {
+    content: "&"; 
+    font-size: 1.7em;
+    padding-right: 8px;
+}
+::selection{
+    color:rgb(253, 251, 121);
+    background-color:indigo;
+}
+
+
+
+
+
+
+
+/*
+
+font-size: 1.4em; 
+rgb(80, 140, 210); - albastru deschis
+background-color: rgb(20, 105, 185); - albastru inchis
+ color: rgb(235, 180, 5); -galben
+*/
