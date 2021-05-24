@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html{
+    margin:0;
+    padding:0;
+}
+body{
+    font: 1.3em/2em 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
+    background-color:rgba(212, 193, 193, 0.2);
+}
+*{
+    box-sizing: border-box;
+}
+a:link { 
+    color: white;
+    padding: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: background 1s; /* Safari */
+    transition: background 1s;
+}
+a:visited { 
+    color: rgb(252, 252, 252);
+}
+a:hover { 
+    background-color: rgb(235, 180, 5);
+    color: white;
+    -webkit-transition: background 1s; /* Safari */
+    transition: background 1s;
+}
+a:active { 
+    color: #ffa600;
+}
+.cards_prod {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	max-width:100%;
+	padding: 0;
+	margin-top:100px;
+}
+.card {
+	width: 25%;
+	margin: 0;
+}
+.cards_prod .photo_prod {
+    width: 90%;
+    height: auto;
+    border: 5px solid rgb(20, 105, 185);
+    box-shadow: 2px 3px 5px #cec7bd;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 10px 15px 0 rgba(212, 193, 193, 0.2), 0 12px 20px 5px rgba(100, 0, 0, 0.22);
+    -webkit-filter: inherit;
+    filter: inherit;
+    transition: all 1s;
+}
+.cards_prod h3 {
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 700px) {
+    .cards_prod {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .cards_prod .card {
+        width: 80%;
+    }
+}
