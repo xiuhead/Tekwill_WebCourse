@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html{
+    margin:0;
+    padding:0;
+}
+body{
+    font: 1.5em/2em 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
+    background-color:rgba(212, 193, 193, 0.2);
+    color: rgb(20, 105, 185);
+}
+.content {
+    margin:10% auto;
+    padding: 5px 0;
+    text-align: center;
+    width: 70%;
+}
+.content button{
+    border: 3px  solid rgb(20, 105, 185);
+    background-color:  whitesmoke;
+    color:  rgb(20, 105, 185);
+    font-weight: 700;
+    border-radius: 7px;
+    padding: 20px 30px;
+    box-shadow: 5px 3px 3px rgb(104, 96, 104);
+    font-size: 1.3em;
+    outline: none;
+    transition: background 1s;
+}
+.content button:hover{
+    background-color: rgb(20, 105, 185);
+    color: white;
+    transition: all 1s;
+}
