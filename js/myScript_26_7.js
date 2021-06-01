@@ -1,0 +1,3 @@
+var string1 = 99, string2 = parseInt("66.8ar"), string3=Boolean(55);
+//document.getElementById("result").innerHTML = "Rezultat: <em><br />" + String(string1) + "<br />" + String(string2) + "<br />" + String(string3) + "</em>";
+document.getElementById("result").innerHTML = "Rezultat: <em><br />" + typeof"String(string1)" + "<br />" + typeof"String(string2)" + "<br />" + typeof"String(string3)" + "</em>";
