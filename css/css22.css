@@ -35,3 +35,7 @@ button:hover{
     transition: all 1s;
 }
 ul{list-style-type: none;}
+span{
+    font-size:1.5em;
+    color: orange;
+}
