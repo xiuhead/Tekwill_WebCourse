@@ -34,3 +34,4 @@ button:hover{
     color: white;
     transition: all 1s;
 }
+ul{list-style-type: none;}
